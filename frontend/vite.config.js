@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Para GitHub Pages
+  base: '/karate-moreno/', // Ruta del repositorio en GitHub Pages
 })

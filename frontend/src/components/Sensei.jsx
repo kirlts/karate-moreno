@@ -20,7 +20,7 @@ export default function Sensei() {
                             {/* Fallback color if image is missing */}
                             <div className="absolute inset-0 bg-karate-dark/10"></div>
                             <img
-                                src="/Sensei Juan Pedro Moreno.png"
+                                src={`${import.meta.env.BASE_URL}Sensei Juan Pedro Moreno.png`}
                                 alt="Sensei Juan Pedro Moreno"
                                 className="w-full h-full object-cover object-top"
                             />

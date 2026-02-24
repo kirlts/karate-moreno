@@ -12,7 +12,7 @@ export default function Hero() {
             <div className="absolute inset-0 z-0">
                 <div className="absolute inset-0 bg-gradient-to-b from-karate-dark/80 via-karate-dark/60 to-karate-dark z-10" />
                 <img
-                    src="/Alumnos del sensei Juan Pedro Moreno realizando un Kata.png"
+                    src={`${import.meta.env.BASE_URL}Alumnos del sensei Juan Pedro Moreno realizando un Kata.png`}
                     alt="Karate Itosu-Ryu Dojo"
                     className="h-full w-full object-cover object-center scale-105"
                 />
