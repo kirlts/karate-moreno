@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+  body {
+    @apply bg-karate-dark text-karate-white font-sans antialiased selection:bg-karate-red selection:text-white leading-relaxed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight text-white;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-karate-red px-6 py-3 text-sm font-medium text-white transition-all hover:bg-[#cc0000] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-karate-red focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border-2 border-karate-gold bg-transparent px-6 py-3 text-sm font-medium text-karate-gold transition-colors hover:bg-karate-gold hover:text-karate-dark focus:outline-none focus:ring-2 focus:ring-karate-gold focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+}
