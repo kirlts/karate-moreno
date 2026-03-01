@@ -1,9 +1,8 @@
+import { motion } from 'framer-motion';
 import { ChevronDown, MessageCircle, MoveUp } from 'lucide-react';
 import { Spotlight } from './Spotlight';
 
 export default function Hero() {
-    const phoneNumber = '+56990786368';
-    const defaultMessage = encodeURIComponent('Hola Sensei Juan Pedro, vengo de su página web y me gustaría reclamar mi primera clase gratis de Karate Itosu-Ryu.');
 
     return (
         <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-karate-white noise-grain">
