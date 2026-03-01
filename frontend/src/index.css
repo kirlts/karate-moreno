@@ -1,31 +1,100 @@
 @import "tailwindcss";
-@config "../tailwind.config.js";
+
+@theme {
+    /* Colors - Tradición Diamante */
+    --color-karate-white: oklch(97.28% 0.005 80.25);
+    --color-karate-dark: oklch(14.46% 0 0);
+    --color-karate-red: oklch(53.24% 0.225 26.15);
+    --color-karate-gold: oklch(76.24% 0.147 84.72);
+    --color-karate-gray: oklch(90% 0.005 0);
+
+    /* Fonts */
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-display: "Outfit", system-ui, sans-serif;
+
+    /* Spacing */
+    --spacing-18: 4.5rem;
+    --spacing-22: 5.5rem;
+
+    /* Letter Spacing */
+    --tracking-tightest: -0.04em;
+    --tracking-widest: 0.2em;
+
+    /* Custom Gradients */
+    --background-image-glass-gradient: linear-gradient(135deg, oklch(0% 0 0 / 0.05) 0%, oklch(0% 0 0 / 0.01) 100%);
+    --background-image-gold-gradient: linear-gradient(to right, oklch(76.24% 0.147 84.72), oklch(60% 0.15 80));
+
+    /* Animations */
+    --animate-spotlight: spotlight 2s ease .75s 1 forwards;
+
+    /* Custom Shadows */
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+    --shadow-gold-focus: 0 10px 20px -10px oklch(var(--color-karate-red) / 0.5);
+
+    @keyframes spotlight {
+        0% {
+            opacity: 0;
+            transform: translate(-72%, -62%) scale(0.5);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translate(-50%, -40%) scale(1);
+        }
+    }
+}
 
 @layer base {
-  body {
-    @apply bg-karate-dark text-karate-white font-sans antialiased selection:bg-karate-red selection:text-white leading-relaxed;
-  }
+    html {
+        scroll-behavior: smooth;
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-display tracking-tight text-white;
-  }
+    body {
+        @apply bg-karate-white text-karate-dark font-sans antialiased selection:bg-karate-red selection:text-white leading-relaxed;
+        background-image: radial-gradient(circle at 50% 50%, oklch(100% 0 0 / 0.5) 0%, oklch(var(--color-karate-white)) 100%);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-display tracking-tight text-karate-dark;
+        text-wrap: balance;
+    }
 }
 
 @layer utilities {
-  .glass-panel {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
-  }
+    .noise-grain {
+        position: relative;
+    }
 
-  .btn-primary {
-    @apply inline-flex items-center justify-center rounded-md bg-karate-red px-6 py-3 text-sm font-medium text-white transition-all hover:bg-[#cc0000] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-karate-red focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
-  }
+    .noise-grain::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.02;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    }
 
-  .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-md border-2 border-karate-gold bg-transparent px-6 py-3 text-sm font-medium text-karate-gold transition-colors hover:bg-karate-gold hover:text-karate-dark focus:outline-none focus:ring-2 focus:ring-karate-gold focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
-  }
+    .glass-panel {
+        @apply bg-white/40 backdrop-blur-xl border border-black/5 shadow-glass;
+    }
+
+    .btn-primary {
+        @apply inline-flex items-center justify-center rounded-sm bg-karate-red px-8 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-red-700 hover:shadow-gold-focus focus:outline-none focus:ring-2 focus:ring-karate-red focus:ring-offset-2 active:scale-95 disabled:pointer-events-none disabled:opacity-50;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center justify-center rounded-sm border border-karate-dark/10 bg-white px-8 py-4 text-sm font-bold uppercase tracking-widest text-karate-dark transition-all hover:bg-gray-50 hover:border-karate-dark/20 hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-karate-dark focus:ring-offset-2 active:scale-95 disabled:pointer-events-none disabled:opacity-50;
+    }
+
+    .text-gradient-gold {
+        @apply bg-clip-text text-transparent bg-gold-gradient;
+    }
 }

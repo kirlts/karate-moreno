@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { ChevronDown, MessageCircle } from 'lucide-react';
+import { ChevronDown, MessageCircle, MoveUp } from 'lucide-react';
+import { Spotlight } from './Spotlight';
 
 export default function Hero() {
     const phoneNumber = '+56990786368';
@@ -7,73 +8,53 @@ export default function Hero() {
     const whatsappUrl = `https://wa.me/${phoneNumber.replace('+', '')}?text=${defaultMessage}`;
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-karate-dark">
+        <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-karate-white noise-grain">
+            <Spotlight
+                className="-top-40 left-0 md:left-60 md:-top-20 opacity-40"
+                fill="oklch(var(--karate-gold))"
+            />
+
             {/* Background Image / Overlay */}
             <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-gradient-to-b from-karate-dark/80 via-karate-dark/60 to-karate-dark z-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-karate-white/95 via-karate-white/80 to-karate-white z-10" />
                 <img
                     src={`${import.meta.env.BASE_URL}Alumnos del sensei Juan Pedro Moreno realizando un Kata.png`}
                     alt="Karate Itosu-Ryu Dojo"
-                    className="h-full w-full object-cover object-center scale-105"
+                    className="h-full w-full object-cover object-center scale-105 opacity-60"
                 />
             </div>
 
-            <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8 text-center mt-20">
+            <div className="container relative z-20 mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="max-w-4xl mx-auto space-y-8"
+                    transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                    className="max-w-4xl mx-auto space-y-12"
                 >
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-karate-gold/30 bg-karate-gold/10 backdrop-blur-sm text-karate-gold text-sm font-semibold tracking-wide uppercase mb-4">
-                        <span className="h-2 w-2 rounded-full bg-karate-gold animate-pulse"></span>
-                        Tradición Itosu-Ryu en Viña del Mar
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-karate-red/10 border border-karate-red/20 mb-8"
+                    >
+                        <span className="w-2 h-2 rounded-full bg-karate-red animate-pulse"></span>
+                        <span className="text-karate-red text-[10px] font-bold uppercase tracking-widest">Karate Tradicional • Viña del Mar</span>
+                    </motion.div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-tight font-display">
-                        Enfrenta Tus <span className="text-transparent bg-clip-text bg-gradient-to-r from-karate-red to-orange-500">Inseguridades</span> y Desafíos
+                    <h1 className="text-5xl md:text-7xl font-bold tracking-tightest text-karate-dark mb-6 leading-[1.1] font-display">
+                        Enfrenta Tus <br />
+                        <span className="text-gradient-gold text-6xl md:text-8xl">Inseguridades</span> y Desafíos
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Forja tu disciplina, fuerza y confianza bajo la guía del Sensei Juan Pedro Moreno. Descubre el verdadero Karate Do.
+                    <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed font-sans font-light">
+                        ¿Sientes que tú o tus hijos podrían ser más fuertes, tanto física como mentalmente? En <span className="text-karate-dark font-medium">Karate Moreno</span> entendemos estos desafíos y estamos aquí para ayudarte a superarlos.
                     </p>
-
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <a
-                            href={whatsappUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="btn-primary w-full sm:w-auto text-lg group"
-                        >
-                            <MessageCircle className="mr-2 h-5 w-5 transition-transform group-hover:scale-110" />
-                            Reclamar Primera Clase Gratis
-                        </a>
-
-                        <a
-                            href="#about"
-                            className="btn-secondary w-full sm:w-auto text-lg"
-                        >
-                            Conocer al Sensei
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
+                        <a href="#info" className="btn-primary flex items-center gap-2 shadow-xl shadow-karate-red/10" aria-label="Ir a la información para tu primera clase gratis">
+                            Primera Clase Gratis <MoveUp className="rotate-45 w-4 h-4" />
                         </a>
                     </div>
                 </motion.div>
             </div>
-
-            {/* Scroll indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 1 }}
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-white/50"
-            >
-                <span className="text-xs uppercase tracking-widest font-semibold">Descubrir</span>
-                <motion.div
-                    animate={{ y: [0, 8, 0] }}
-                    transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-                >
-                    <ChevronDown className="h-6 w-6 text-karate-gold" />
-                </motion.div>
-            </motion.div>
         </section>
     );
 }

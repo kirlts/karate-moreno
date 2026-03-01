@@ -1,0 +1,39 @@
+
+> frontend@0.0.0 test
+> vitest --run
+
+
+[1m[46m RUN [49m[22m [36mv4.0.18 [39m[90m/home/kirlts/karate-moreno/frontend[39m
+
+ [31m❯[39m src/App.test.jsx [2m([22m[2m1 test[22m[2m | [22m[31m1 failed[39m[2m)[22m[32m 53[2mms[22m[39m
+[31m   [31m×[31m renders hero title[39m[32m 49[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 1 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m src/App.test.jsx[2m > [22mrenders hero title
+[31m[1mReferenceError[22m: MoveUp is not defined[39m
+[36m [2m❯[22m Hero src/components/Hero.jsx:[2m54:51[22m[39m
+    [90m 52| [39m                    <div className="flex flex-col sm:flex-row items-ce…
+    [90m 53| [39m                        <a href="#info" className="btn-primary flex it…
+    [90m 54| [39m                            Primera Clase Gratis <MoveUp className="ro…
+    [90m   | [39m                                                  [31m^[39m
+    [90m 55| [39m                        [33m<[39m[33m/[39m[33ma[39m[33m>[39m
+    [90m 56| [39m                        [33m<[39m[33mdiv[39m [33mclassName[39m[33m=[39m[32m"flex -space-x-3 items-center"[39m[33m>[39m
+[90m [2m❯[22m Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:[2m25904:20[22m[39m
+[90m [2m❯[22m renderWithHooks node_modules/react-dom/cjs/react-dom-client.development.js:[2m7662:22[22m[39m
+[90m [2m❯[22m updateFunctionComponent node_modules/react-dom/cjs/react-dom-client.development.js:[2m10166:19[22m[39m
+[90m [2m❯[22m beginWork node_modules/react-dom/cjs/react-dom-client.development.js:[2m11778:18[22m[39m
+[90m [2m❯[22m runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:[2m874:13[22m[39m
+[90m [2m❯[22m performUnitOfWork node_modules/react-dom/cjs/react-dom-client.development.js:[2m17641:22[22m[39m
+[90m [2m❯[22m workLoopSync node_modules/react-dom/cjs/react-dom-client.development.js:[2m17469:41[22m[39m
+[90m [2m❯[22m renderRootSync node_modules/react-dom/cjs/react-dom-client.development.js:[2m17450:11[22m[39m
+[90m [2m❯[22m performWorkOnRoot node_modules/react-dom/cjs/react-dom-client.development.js:[2m16583:35[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m   Start at [22m 16:59:18
+[2m   Duration [22m 2.69s[2m (transform 312ms, setup 122ms, import 892ms, tests 53ms, environment 1.14s)[22m
+
