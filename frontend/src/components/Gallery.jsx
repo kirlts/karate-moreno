@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, Image as ImageIcon } from 'lucide-react';
 
 const images = [
@@ -50,7 +50,7 @@ export default function Gallery() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <AnimatePresence mode="popLayout">
-                        {visibleImages.map((img, idx) => (
+                        {visibleImages.map((img) => (
                             <motion.div
                                 key={img.url}
                                 layout

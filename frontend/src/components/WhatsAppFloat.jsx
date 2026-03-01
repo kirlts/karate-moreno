@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 export default function WhatsAppFloat() {
     const [isVisible, setIsVisible] = useState(false);

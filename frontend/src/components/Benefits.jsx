@@ -1,5 +1,4 @@
 import { ShieldCheck, Focus, Users, Award, MoveUp, Zap } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 const benefits = [
     {
