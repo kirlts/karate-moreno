@@ -68,7 +68,7 @@ export default function Info() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-white border-2 border-karate-gold/20 hover:border-karate-gold hover:bg-karate-gold/5 transition-all duration-300 shadow-sm hover:shadow-md overflow-hidden"
-                                aria-label="Escribir por WhatsApp al Sensei Juan Pedro"
+                                aria-label="Escribir por WhatsApp al Sensei Juan Pedro Moreno Arenas"
                             >
                                 <div className="flex items-center gap-3 mb-1">
                                     <MessageCircle className="w-6 h-6 text-[#25D366] fill-[#25D366]/10 group-hover:scale-110 transition-transform" />

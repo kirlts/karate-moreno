@@ -47,7 +47,7 @@ Este archivo registra todas las decisiones que el usuario haya tomado o las corr
 
 **Fecha:** 2026-03-01
 
-- **Contexto:** La biografía inicial mezclaba datos históricos del Shihan Juan Moreno Chappa (fundador) con el Sensei Juan Pedro Moreno (hijo/actual). El usuario solicitó priorizar la descripción del hijo.
+- **Contexto:** La biografía inicial mezclaba datos históricos del Shihan Pedro Moreno Chapa (fundador) con el Sensei Juan Pedro Moreno Arenas (hijo/actual). El usuario solicitó corregir los nombres y priorizar la descripción del hijo como líder actual.
 - **Decisión:** Redactar dos párrafos enfocados en la trayectoria internacional y el liderazgo actual de Juan Pedro Moreno, moviendo las referencias al padre como un "legado heredado".
 - **Alternativas Descartadas:** Mantener biografías separadas o detalladas de ambos (se descartó por simplicidad en la landing).
 - **Consecuencias:** Mayor claridad sobre quién es el instructor actual y refuerzo de su autoridad como representante oficial.
@@ -83,3 +83,18 @@ Este archivo registra todas las decisiones que el usuario haya tomado o las corr
   - Botón verde de WhatsApp estándar (rompía la armonía cromática del estilo "Zen White").
 - **Consecuencias:** Mejora en la densidad de información y un punto focal de conversión más integrado estéticamente.
 - **Condiciones de Reversión:** Si los tests de usabilidad indican que el botón dorado no se reconoce instantáneamente como WhatsApp.
+
+---
+
+## [DEC-007] Corrección de Nombres y Clarificación de Liderazgo
+
+**Fecha:** 2026-03-02
+
+- **Contexto:** El usuario solicitó cambiar "Juan Moreno Chappa" por "Pedro Moreno Chapa" y asegurar que Juan Pedro Moreno Arenas sea identificado claramente como el sensei actual.
+- **Decisión:**
+  1. Reemplazar todas las menciones del Shihan fundador por "Pedro Moreno Chapa".
+  2. Anteponer "Sensei Actual" en el encabezado principal de la biografía.
+  3. Utilizar el nombre completo "Juan Pedro Moreno Arenas" en puntos clave de contacto y biografía detallada.
+- **Alternativas Descartadas:** Mantener los nombres anteriores (erróneos según el usuario).
+- **Consecuencias:** Mayor precisión histórica y claridad para los nuevos alumnos sobre quién lidera las clases hoy.
+- **Condiciones de Reversión:** Ninguna, es una corrección de datos factuales proporcionada por el usuario.

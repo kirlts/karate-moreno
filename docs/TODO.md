@@ -103,5 +103,12 @@ Elevar el "feel" del sitio a un nivel premium mediante refinamiento de diseño y
 - [x] **[TASK-036] Verificación y Cierre** `[2026-03-01 19:42:00]`
 - [x] **[TASK-037] Refinado Estético III (Mapas & Galería)** `[2026-03-01 19:33:00]`
 
+### [EPIC-009] Actualización de Identidad y Legado
+
+- [x] **[TASK-040] Actualización de Nombres Históricos**: Reemplazar "Juan Moreno Chappa" por "Pedro Moreno Chapa". `[2026-03-02 15:35:00]`
+- [x] **[TASK-041] Clarificación de Liderazgo**: Asegurar que Juan Pedro Moreno Arenas sea identificado explícitamente como el Sensei actual. `[2026-03-02 15:35:00]`
+
+- [x] **[TASK-042] Sincronización Documental Final**: Ejecución de workflow `/document` para asegurar coherencia. `[2026-03-02 15:42:00]`
+
 ---
 *Instrucciones de Trazabilidad: Cada vez que se avance o complete una subtarea, se DEBE añadir la fecha o timestamp junto a la tarea.*

@@ -4,7 +4,7 @@ Este documento es la **Especificación Maestra** del repositorio. Debe ser actua
 
 ## 1. Misión y Propósito Central
 
-Crear una landing page profesional y estéticamente "premium" para el dojo de Karate Itosu-Ryu del Sensei Juan Pedro Moreno. El objetivo principal es mostrar la escuela al mundo, transmitir profesionalismo, tradición y confianza, y generar conversión directa mediante un enlace de WhatsApp (+56 9 9078 6368) para agendar clases.
+Crear una landing page profesional y estéticamente "premium" para el dojo de Karate Itosu-Ryu del Sensei Juan Pedro Moreno Arenas. El objetivo principal es mostrar la escuela al mundo, transmitir profesionalismo, tradición y confianza, y generar conversión directa mediante un enlace de WhatsApp (+56 9 9078 6368) para agendar clases.
 
 ## 2. Arquitectura de Alto Nivel
 
@@ -20,7 +20,7 @@ Crear una landing page profesional y estéticamente "premium" para el dojo de Ka
 ## 3. Especificación Técnica Funcional
 
 - **Sección Hero:** Impactante, con el logo o video/foto del sensei, título principal y botón CTA destacado hacia WhatsApp para reclamar la primera clase gratis. Se elimina el botón de reserva para reducir la fricción.
-- **Sección Historia y Sensei:** Biografía actualizada de Sensei Juan Pedro Moreno (hijo), representante oficial del estilo Itosu-Ryu en Chile y medallista internacional. Incluye historia del estilo Itosu-Ryu con su logo oficial y la bandera de Chile en la sección expandida. Se mantienen los encabezados fijos al expandir.
+- **Sección Historia y Sensei:** Biografía de Sensei Juan Pedro Moreno Arenas (hijo), representante oficial del estilo Itosu-Ryu en Chile y medallista internacional. Incluye historia del estilo Itosu-Ryu con su logo oficial y la bandera de Chile en la sección expandida. Se mantienen los encabezados fijos al expandir.
 - **Sección Beneficios:** Grid de 5 puntos clave (Disciplina, Fuerza Integral, Defensa Personal, Comunidad, Red de Dojos).
 - **Sección Testimonios:** Reseñas reales extraídas de Google Maps con enlace directo para verificación de autenticidad.
 - **Sección Galería:** Cuadrícula visual con funcionalidad de Lightbox (visor modal). Renombrada a "Nuestra Galería" para mayor cercanía. Se eliminó el logo superpuesto para una visualización más limpia.
@@ -32,7 +32,7 @@ Crear una landing page profesional y estéticamente "premium" para el dojo de Ka
 - **Estilo de Comunicación (Pragmatismo Humanista):**
   - **PROHIBICIÓN DE AI-SLOP:** Evitar términos como "Maestría", "Sendas", "Legados milenarios", "Forja", "Destino", "Te invitamos a descubrir", "Excelente dojo para...".
   - **Tono Realista:** Hablar como un vecino de Viña del Mar que recomienda una clase.
-- **Identidad Verificada:** Juan Pedro Moreno (Sensei actual e hijo del Shihan Juan Moreno Chappa). El copy debe reflejar su trayectoria actual y estatus como representante de la Japan Karatedo Itosu-kai.
+- **Identidad Verificada:** Juan Pedro Moreno Arenas (Sensei actual e hijo del Shihan Pedro Moreno Chapa). El copy debe reflejar su liderazgo actual y estatus como representante de la Japan Karatedo Itosu-kai.
 - **SEO & Social**: Implementación de OG Tags para compartir en redes y JSON-LD (LocalBusiness) para Google Search.
 - **Accesibilidad**: Cumplimiento de estándares A11y (aria-labels, estructura semántica H1-H4).
 - **Conversión Directa**: Enfoque en la "Primera Clase de Prueba Gratis" sin requisitos de registro previo.

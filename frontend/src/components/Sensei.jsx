@@ -64,7 +64,7 @@ export default function Sensei() {
                     <div className="w-full lg:w-1/2 space-y-10">
                         <div className="space-y-4">
                             <h2 className="text-4xl md:text-5xl font-bold font-display tracking-tightest leading-none text-karate-dark">
-                                Sensei <span className="text-gradient-gold">Juan Pedro</span> Moreno Arenas
+                                Sensei Actual <span className="text-gradient-gold">Juan Pedro</span> Moreno Arenas
                             </h2>
                             <p className="text-karate-red font-bold text-sm uppercase tracking-[0.2em]">Tradición en Karate Itosu-Ryu y Defensa Personal</p>
                             <div className="h-1 w-24 bg-karate-red rounded-full"></div>
@@ -75,7 +75,7 @@ export default function Sensei() {
                                 Con el <span className="text-karate-dark font-medium italic">Sensei Juan Pedro Moreno Arenas</span>, Director Técnico Representante en Chile del estilo Itosu-Ryu y con más de 40 años de experiencia, encontrarás la guía que necesitas.
                             </p>
                             <p>
-                                Continuador del legado de su padre, el Shihan <span className="text-karate-dark font-medium">Juan Moreno Chappa</span>, el Sensei Moreno combina experiencia internacional con una pasión por enseñar a niños y adultos que buscan recuperar su fortaleza física y disciplina mental.
+                                Continuador del legado de su padre, el Shihan <span className="text-karate-dark font-medium">Pedro Moreno Chapa</span>, el Sensei Moreno combina experiencia internacional con una pasión por enseñar a niños y adultos que buscan recuperar su fortaleza física y disciplina mental.
                             </p>
                         </div>
 
@@ -129,7 +129,7 @@ export default function Sensei() {
                                         </div>
                                         <div className="space-y-4 text-gray-500 text-sm leading-relaxed">
                                             <p>
-                                                Juan Pedro Moreno, representante oficial del estilo Itosu-Ryu (Japón) en Chile, lidera el dojo con una visión que une la tradición heredada de su padre, el Shihan Juan Moreno Chappa, con los estándares técnicos contemporáneos.
+                                                Juan Pedro Moreno Arenas, actual representante oficial del estilo Itosu-Ryu (Japón) en Chile, lidera el dojo con una visión que une la tradición heredada de su padre, el Shihan Pedro Moreno Chapa, con los estándares técnicos contemporáneos.
                                             </p>
                                             <p>
                                                 Como medallista internacional y formador de alto nivel, el Sensei Moreno aporta su experiencia en competencia de élite para guiar a alumnos desde los 7 años en un camino de disciplina y superación personal en Viña del Mar.

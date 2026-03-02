@@ -12,6 +12,6 @@ describe('Sensei Component', () => {
         render(<Sensei />);
         const bioButton = screen.getByLabelText(/Ver biografía detallada del Sensei/i);
         fireEvent.click(bioButton);
-        expect(screen.getByText(/Juan Pedro Moreno, representante oficial/i)).toBeInTheDocument();
+        expect(screen.getByText(/Juan Pedro Moreno Arenas, actual representante oficial/i)).toBeInTheDocument();
     });
 });

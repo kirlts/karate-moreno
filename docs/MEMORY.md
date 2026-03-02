@@ -60,10 +60,6 @@ La historia y secciones de biografía deben evitar estructuras predecibles (Tít
 
 Se detectó que el widget de Google Maps en blanco y negro afectaba la legibilidad y que el logo en la galería generaba ruido visual.
 
-### [DEC-006] Diseño de CTA Gold y Layout Side-by-Side
+### [HEU-006] Densidad de Información en Layouts Side-by-Side
 
-- **Contexto:** Se necesitaba optimizar el espacio en la sección Info y dar mayor jerarquía al contacto por WhatsApp.
-- **Decisión:** Implementar un grid 1x2 para Ubicación/Horarios y un botón de WhatsApp con fondo blanco, borde dorado y icono oficial.
-- **Alternativas Descartadas:** Layout vertical (muere en mobile/tablet), botón verde estándar (rompía la estética Zen White).
-- **Consecuencias:** Mayor densidad de información sin saturar el diseño; CTA de alta visibilidad alineado con el Norte Estético.
-- **Condiciones de Reversión:** Si el usuario solicita un modo oscuro (Dark Mode), donde el dorado deberá recalibrarse.
+En interfaces que requieren mostrar datos prácticos inconexos (ej. Ubicación vs. Horarios) en un espacio reducido, el uso de grids side-by-side con iconografía minimalista y pesos tipográficos diferenciados (Light para etiquetas, Medium Italic para datos) maximiza la legibilidad sin sacrificar la elegancia. Esta técnica previene el "scroll fatiga" en dispositivos móviles al consolidar información crítica en un solo golpe de vista.
