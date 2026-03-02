@@ -9,5 +9,5 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/test/setup.js',
   },
-  base: '/karate-moreno/', // Ruta del repositorio en GitHub Pages
+  base: '/', // Ruta para dominio personalizado en GitHub Pages
 })
