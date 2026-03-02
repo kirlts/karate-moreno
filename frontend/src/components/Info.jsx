@@ -33,17 +33,23 @@ export default function Info() {
                     {/* Details & Map */}
                     <div className="md:w-3/5 p-12 lg:p-16 flex flex-col gap-10 bg-white">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
-                            <div className="flex gap-4 group">
+                            <a
+                                href="https://maps.app.goo.gl/8dhA8M7c2o44Ah9B6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex gap-4 group cursor-pointer"
+                                aria-label="Abrir ubicación en Google Maps"
+                            >
                                 <div className="flex-shrink-0">
-                                    <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center border border-black/5 group-hover:border-karate-red/30 transition-colors">
-                                        <MapPin className="text-karate-red w-5 h-5" />
+                                    <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center border border-black/5 group-hover:border-karate-red/30 group-hover:bg-karate-red/5 transition-colors">
+                                        <MapPin className="text-karate-red w-5 h-5 group-hover:scale-110 transition-transform" />
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 className="font-bold font-display text-base mb-1 text-karate-dark">Ubicación</h4>
-                                    <p className="text-gray-500 font-light text-xs italic">Arlegui 1273, Piso 2.<br />Viña del Mar.</p>
+                                    <h4 className="font-bold font-display text-base mb-1 text-karate-dark group-hover:text-karate-red transition-colors">Ubicación</h4>
+                                    <p className="text-gray-500 font-light text-xs italic group-hover:text-gray-700 transition-colors">Arlegui 1273, Piso 2.<br />Viña del Mar, Chile.</p>
                                 </div>
-                            </div>
+                            </a>
 
                             <div className="flex gap-4 group">
                                 <div className="flex-shrink-0">

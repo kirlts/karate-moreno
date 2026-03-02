@@ -110,5 +110,10 @@ Elevar el "feel" del sitio a un nivel premium mediante refinamiento de diseño y
 
 - [x] **[TASK-042] Sincronización Documental Final**: Ejecución de workflow `/document` para asegurar coherencia. `[2026-03-02 15:42:00]`
 
+### [EPIC-010] Optimización de Previsualización y SEO Inicial
+
+- [x] **[TASK-043] Configuración de Open Graph y Metadatos**: Ajustar `index.html` con URLs absolutas para WhatsApp y mejorar title/keywords para "Karate viña del mar". `[2026-03-02 15:48:00]`
+- [x] **[TASK-044] Integración de Enlace Directo Google Maps**: Hacer clicable la dirección en `Info.jsx` e integrar `hasMap` en JSON-LD. `[2026-03-02 15:53:00]`
+
 ---
 *Instrucciones de Trazabilidad: Cada vez que se avance o complete una subtarea, se DEBE añadir la fecha o timestamp junto a la tarea.*

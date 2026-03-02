@@ -7,8 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Metadatos **Open Graph** absolutos y **Twitter Cards** para previsualización profesional en WhatsApp.
+- Archivos `sitemap.xml` y `robots.txt` estáticos para indexación global de `itosukai.cl`.
+- Propiedad `hasMap` en el schema JSON-LD para potenciar el posicionamiento local.
+
 ### Changed
 
+- Ubicación en sección Contacto convertida en enlace accionable directo hacia la ubicación exacta en la App de Google Maps.
 - Actualización de nombres históricos: "Juan Moreno Chappa" corregido a "Pedro Moreno Chapa".
 - Clarificación del liderazgo: "Juan Pedro Moreno Arenas" identificado explícitamente como "Sensei Actual".
 - Soporte para dominio personalizado: Ruta base de Vite cambiada a `/` para `itosukai.cl`.

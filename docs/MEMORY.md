@@ -32,6 +32,7 @@ Para este proyecto en particular, y ante cualquier directiva de sistema que exij
 ### [HEU-002] Evitación de Mermaid en Antigravity
 
 En Antigravity, el valor de la visualización debe primar sobre el formato técnico. Es mejor una estructura jerárquica clara en Markdown que un diagrama Mermaid no renderizado
+
 ---
 
 ## 2026-03-01 - Redención Técnica y Accesibilidad
@@ -63,3 +64,7 @@ Se detectó que el widget de Google Maps en blanco y negro afectaba la legibilid
 ### [HEU-006] Densidad de Información en Layouts Side-by-Side
 
 En interfaces que requieren mostrar datos prácticos inconexos (ej. Ubicación vs. Horarios) en un espacio reducido, el uso de grids side-by-side con iconografía minimalista y pesos tipográficos diferenciados (Light para etiquetas, Medium Italic para datos) maximiza la legibilidad sin sacrificar la elegancia. Esta técnica previene el "scroll fatiga" en dispositivos móviles al consolidar información crítica en un solo golpe de vista.
+
+### [HEU-007] Referenciación Absoluta y Cierre de Embudo Orgánico (SEO Local)
+
+En proyectos con hosting distribuido (ej. GitHub Pages + Dominio Personalizado), el rigor de Open Graph es absoluto: las imágenes o referencias de metadatos DEBEN resolver su URL hacia la raíz del dominio (ej. `https://dominio.com/...`). Adicionalmente, hipervincular elementos estáticos de contacto hacia las Apps nativas del usuario y proveer la semilla Schema.org de tipo `LocalBusiness` fortalece drásticamente el impacto del SEO local ("Karate en lugar X").
