@@ -3,22 +3,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, Image as ImageIcon } from 'lucide-react';
 
 const images = [
-    { url: 'Alumnos del sensei Juan Pedro Moreno realizando un Kata.png', title: 'Entrenamiento de Katas', category: 'Práctica' },
-    { url: 'Sensei Juan Pedro Moreno con sus estudiantes.png', title: 'Clase Grupal', category: 'Comunidad' },
-    { url: 'Integrándose desde la primera clase de Karate_edited.jpg', title: 'Nuevos Alumnos', category: 'Iniciación' },
-    { url: 'Defensa Personal.png', title: 'Técnicas de Defensa', category: 'Seguridad' },
-    { url: 'Sensei Juan Pedro Moreno.png', title: 'Sensei Juan Pedro', category: 'Maestro' },
-    { url: 'Sensei Juan Pedro Moreno entrenado en el Dojo karate kaizen.png', title: 'Perfeccionamiento', category: 'Dojo' },
-    { url: 'Sensei Juan Pedro Moreno en Dinamarca.png', title: 'Trayectoria Internacional', category: 'Dinamarca' },
-    { url: 'Sensei Juan Pedro Moreno premiado en Canadá_edited.jpg', title: 'Reconocimiento Internacional', category: 'Canadá' },
-    { url: 'Sensei Juan Pedro Moreno premiado en Dinamarca.png', title: 'Logros en Europa', category: 'Premios' },
-    { url: 'Sensei Pedro Moreno padre e hijo actual sensei Pedro Moreno_edited.jpg', title: 'Legado de Familia', category: 'Tradición' },
-    { url: 'Sensei Pedro Moreno hijo entrenando a su hija en karate Itosu Ryu.png', title: 'Tercera Generación', category: 'Familia' },
-    { url: 'Reconocimiento a la trayectoria del padre del sensei Juan Pedro Moreno_edited.jpg', title: 'Historia Itosukai', category: 'Historia' },
-    { url: 'tradición familiar de karate.jpg', title: 'Valores que trascienden', category: 'Raíces' },
-    { url: 'Sensei Juan Pedro Moreno en entrevista en diario La Estrella.png', title: 'Presencia en Medios', category: 'Prensa' },
-    { url: 'Kit de competinción del Sensei Juan Pedro Moreno.png', title: 'Espíritu Competitivo', category: 'Logros' },
-    { url: 'Sensei Juan Pedro Moreno posando con su sensei en Canadá_edited.jpg', title: 'Linaje Directo', category: 'Maestría' }
+    { url: 'Alumnos del sensei Juan Pedro Moreno realizando un Kata.png', title: 'Entrenamiento de Katas en Viña del Mar', category: 'Práctica', alt: 'Alumnos practicando Katas en el Dojo de Karate Viña del Mar' },
+    { url: 'Sensei Juan Pedro Moreno con sus estudiantes.png', title: 'Clase Grupal', category: 'Comunidad', alt: 'Sensei Juan Pedro Moreno con sus estudiantes de artes marciales en la V Región' },
+    { url: 'Integrándose desde la primera clase de Karate_edited.jpg', title: 'Nuevos Alumnos en Viña', category: 'Iniciación', alt: 'Nuevos alumnos en su primera clase de Karate Itosu Kai Chile' },
+    { url: 'Defensa Personal.png', title: 'Técnicas de Defensa', category: 'Seguridad', alt: 'Clases de Defensa Personal en Viña del Mar' },
+    { url: 'Sensei Juan Pedro Moreno.png', title: 'Sensei Juan Pedro', category: 'Maestro', alt: 'Sensei Juan Pedro Moreno, representante de Itosu Kai Chile' },
+    { url: 'Sensei Juan Pedro Moreno entrenado en el Dojo karate kaizen.png', title: 'Perfeccionamiento', category: 'Dojo', alt: 'Perfeccionamiento de Karate tradicional Itosu-Ryu' },
+    { url: 'Sensei Juan Pedro Moreno en Dinamarca.png', title: 'Trayectoria Internacional', category: 'Dinamarca', alt: 'Sensei Juan Pedro Moreno de Itosu Kai en Dinamarca' },
+    { url: 'Sensei Juan Pedro Moreno premiado en Canadá_edited.jpg', title: 'Reconocimiento Internacional', category: 'Canadá', alt: 'Sensei Juan Pedro Moreno premiado internacionalmente' },
+    { url: 'Sensei Juan Pedro Moreno premiado en Dinamarca.png', title: 'Logros en Europa', category: 'Premios', alt: 'Logros en Europa del Sensei de Karate Moreno' },
+    { url: 'Sensei Pedro Moreno padre e hijo actual sensei Pedro Moreno_edited.jpg', title: 'Legado de Familia', category: 'Tradición', alt: 'Legado familiar del Karate Itosu-Ryu en Chile' },
+    { url: 'Sensei Pedro Moreno hijo entrenando a su hija en karate Itosu Ryu.png', title: 'Tercera Generación', category: 'Familia', alt: 'Tercera generación de Karate Itosu-Ryu' },
+    { url: 'Reconocimiento a la trayectoria del padre del sensei Juan Pedro Moreno_edited.jpg', title: 'Historia Itosukai', category: 'Historia', alt: 'Historia y reconocimiento de Itosu Kai Chile' },
+    { url: 'tradición familiar de karate.jpg', title: 'Valores que trascienden', category: 'Raíces', alt: 'Valores familiares en el Dojo Moreno en la Quinta Región' },
+    { url: 'Sensei Juan Pedro Moreno en entrevista en diario La Estrella.png', title: 'Presencia en Medios', category: 'Prensa', alt: 'Sensei Juan Pedro Moreno en entrevista en el diario La Estrella de Valparaíso' },
+    { url: 'Kit de competinción del Sensei Juan Pedro Moreno.png', title: 'Espíritu Competitivo', category: 'Logros', alt: 'Kit de competición de Karate V Región' },
+    { url: 'Sensei Juan Pedro Moreno posando con su sensei en Canadá_edited.jpg', title: 'Linaje Directo', category: 'Maestría', alt: 'Linaje directo de Itosu Kai' }
 ];
 
 export default function Gallery() {
@@ -63,7 +63,7 @@ export default function Gallery() {
                             >
                                 <img
                                     src={`${import.meta.env.BASE_URL}${img.url}`}
-                                    alt={`Foto de ${img.title} en el dojo de Karate Moreno`}
+                                    alt={img.alt || `Foto de ${img.title} en el dojo de Karate Moreno en Viña del Mar`}
                                     loading="lazy"
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
@@ -110,7 +110,7 @@ export default function Gallery() {
                         >
                             <img
                                 src={`${import.meta.env.BASE_URL}${selectedImage.url}`}
-                                alt={selectedImage.title}
+                                alt={selectedImage.alt || selectedImage.title}
                                 className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
                             />
                             <div className="text-center">

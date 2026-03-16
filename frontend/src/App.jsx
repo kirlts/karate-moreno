@@ -24,8 +24,9 @@ function App() {
 
       {/* Simple Footer */}
       <footer className="bg-white py-12 text-center text-gray-400 text-sm border-t border-black/5">
-        <p className="font-display font-medium text-karate-dark mb-2">&copy; {new Date().getFullYear()} Karate Moreno Itosu-Ryu. Tradición en Viña del Mar.</p>
-        <p className="max-w-xs mx-auto">Arlegui 1273, Segundo Piso | +56 9 9078 6368</p>
+        <p className="font-display font-medium text-karate-dark mb-2">&copy; {new Date().getFullYear()} Dojo Karate Moreno Itosu-Ryu (Itosu Kai Chile).</p>
+        <p className="max-w-sm mx-auto mb-2">Escuela oficial de Karate y Defensa Personal en Viña del Mar, Región de Valparaíso (V Región).</p>
+        <p className="max-w-xs mx-auto text-xs">Arlegui 1273, Segundo Piso | +56 9 9078 6368</p>
       </footer>
     </div>
   );

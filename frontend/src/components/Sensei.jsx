@@ -11,7 +11,7 @@ export default function Sensei() {
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-karate-gold/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
 
             <div className="container mx-auto px-4 max-w-6xl relative z-10">
-                <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
+                <article className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
                     {/* Image side */}
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -66,16 +66,16 @@ export default function Sensei() {
                             <h2 className="text-4xl md:text-5xl font-bold font-display tracking-tightest leading-none text-karate-dark">
                                 Sensei Actual <span className="text-gradient-gold">Juan Pedro</span> Moreno Arenas
                             </h2>
-                            <p className="text-karate-red font-bold text-sm uppercase tracking-[0.2em]">Tradición en Karate Itosu-Ryu y Defensa Personal</p>
+                            <p className="text-karate-red font-bold text-sm uppercase tracking-[0.2em]">Tradición en Karate Itosu Kai Chile (V Región) y Defensa Personal</p>
                             <div className="h-1 w-24 bg-karate-red rounded-full"></div>
                         </div>
 
                         <div className="space-y-6 text-lg text-gray-500 leading-relaxed font-sans font-light">
                             <p>
-                                Con el <span className="text-karate-dark font-medium italic">Sensei Juan Pedro Moreno Arenas</span>, Director Técnico Representante en Chile del estilo Itosu-Ryu y con más de 40 años de experiencia, encontrarás la guía que necesitas.
+                                Con el <span className="text-karate-dark font-medium italic">Sensei Juan Pedro Moreno Arenas</span>, Director Técnico Representante oficial en Chile del estilo Itosu-Ryu (<strong className="font-normal text-karate-dark font-medium">Itosu Kai Chile</strong>) y con más de 40 años de experiencia en la enseñanza en <strong className="font-normal text-karate-dark font-medium">Viña del Mar</strong>, encontrarás la guía que necesitas.
                             </p>
                             <p>
-                                Continuador del legado de su padre, el Shihan <span className="text-karate-dark font-medium">Pedro Moreno Chapa</span>, el Sensei Moreno combina experiencia internacional con una pasión por enseñar a niños y adultos que buscan recuperar su fortaleza física y disciplina mental.
+                                Continuador del legado de su padre, el Shihan <span className="text-karate-dark font-medium">Pedro Moreno Chapa</span>, el Sensei Moreno combina experiencia internacional con una pasión por enseñar en la <strong className="font-normal text-karate-dark font-medium">V Región</strong> a niños y adultos que buscan recuperar su fortaleza física y disciplina mental.
                             </p>
                         </div>
 
@@ -129,10 +129,10 @@ export default function Sensei() {
                                         </div>
                                         <div className="space-y-4 text-gray-500 text-sm leading-relaxed">
                                             <p>
-                                                Juan Pedro Moreno Arenas, actual representante oficial del estilo Itosu-Ryu (Japón) en Chile, lidera el dojo con una visión que une la tradición heredada de su padre, el Shihan Pedro Moreno Chapa, con los estándares técnicos contemporáneos.
+                                                Juan Pedro Moreno Arenas, actual representante oficial del estilo Itosu-Ryu (Japón) para <strong className="font-normal">Itosu Kai Chile</strong>, lidera el dojo con una visión que une la tradición heredada de su padre, el Shihan Pedro Moreno Chapa, con los estándares técnicos contemporáneos de la enseñanza marcial en nuestro país.
                                             </p>
                                             <p>
-                                                Como medallista internacional y formador de alto nivel, el Sensei Moreno aporta su experiencia en competencia de élite para guiar a alumnos desde los 7 años en un camino de disciplina y superación personal en Viña del Mar.
+                                                Como medallista internacional y formador de alto nivel, el Sensei Moreno aporta su experiencia en competencia de élite para guiar a alumnos desde los 7 años en un camino de disciplina y superación personal en nuestro dojo de <strong className="font-normal">Viña del Mar, Valparaíso</strong>.
                                             </p>
                                         </div>
                                     </div>
@@ -168,7 +168,7 @@ export default function Sensei() {
                                                 Este linaje fue preservado y formalizado más tarde por <strong>Ryusho Sakagami</strong> (3er Soke), quien en 1969 estableció oficialmente el nombre "Itosu-Ryu" para distinguir esta rama de otras evoluciones del karate. Su labor fue fundamental para salvaguardar la pureza de los katas tradicionales de Okinawa, fundando la organización internacional que hasta hoy protege este estilo caracterizado por su profundidad técnica y respeto a la tradición.
                                             </p>
                                             <p>
-                                                Tras el fallecimiento de Sakagami en 1993, el legado continuó bajo la guía de su hijo <strong>Sadaaki Sakagami</strong>. En Chile, nuestra escuela mantiene este vínculo directo y oficial, siendo la única autorizada para impartir este linaje de la Japan Karatedo Itosu-kai. Es esta conexión directa con las raíces lo que nos permite ofrecer una práctica auténtica aquí en Viña del Mar, donde la tradición se une con la exigencia moderna.
+                                                Tras el fallecimiento de Sakagami en 1993, el legado continuó bajo la guía de su hijo <strong>Sadaaki Sakagami</strong>. En Chile, nuestra escuela de <strong className="font-normal">Karate Itosu Kai Chile</strong> mantiene este vínculo directo y oficial, siendo la única autorizada en la <strong className="font-normal">Quinta Región</strong> para impartir este linaje de la Japan Karatedo Itosu-kai. Es esta conexión directa con las raíces lo que nos permite ofrecer una práctica auténtica aquí en <strong className="font-normal">Viña del Mar</strong>, donde la tradición se une con la exigencia moderna.
                                             </p>
                                         </div>
                                     </div>
@@ -176,7 +176,7 @@ export default function Sensei() {
                             )}
                         </AnimatePresence>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     );
