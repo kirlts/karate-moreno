@@ -38,7 +38,7 @@ export default function Info() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex gap-4 group cursor-pointer"
-                                aria-label="Abrir ubicación en Google Maps"
+                                aria-label="Abrir ubicación del Dojo Itosu Kai en Google Maps"
                             >
                                 <div className="flex-shrink-0">
                                     <div className="w-12 h-12 bg-gray-50 rounded-xl flex items-center justify-center border border-black/5 group-hover:border-karate-red/30 group-hover:bg-karate-red/5 transition-colors">
@@ -47,7 +47,7 @@ export default function Info() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold font-display text-base mb-1 text-karate-dark group-hover:text-karate-red transition-colors">Ubicación</h4>
-                                    <p className="text-gray-500 font-light text-xs italic group-hover:text-gray-700 transition-colors">Arlegui 1273, Piso 2.<br />Viña del Mar, Chile.</p>
+                                    <p className="text-gray-500 font-light text-xs italic group-hover:text-gray-700 transition-colors">Arlegui 1273, Piso 2.<br />Viña del Mar, Región de Valparaíso (V Región).</p>
                                 </div>
                             </a>
 

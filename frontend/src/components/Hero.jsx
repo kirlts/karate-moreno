@@ -34,7 +34,7 @@ export default function Hero() {
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-karate-red/10 border border-karate-red/20 mb-8"
                     >
                         <span className="w-2 h-2 rounded-full bg-karate-red animate-pulse"></span>
-                        <span className="text-karate-red text-[10px] font-bold uppercase tracking-widest">Karate Tradicional • Viña del Mar</span>
+                        <span className="text-karate-red text-[10px] font-bold uppercase tracking-widest">Karate Itosu Kai Chile • Viña del Mar, V Región</span>
                     </motion.div>
 
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tightest text-karate-dark mb-6 leading-[1.1] font-display">
@@ -43,7 +43,7 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-500 mb-10 max-w-2xl mx-auto leading-relaxed font-sans font-light">
-                        ¿Sientes que tú o tus hijos podrían ser más fuertes, tanto física como mentalmente? En <span className="text-karate-dark font-medium">Karate Moreno</span> entendemos estos desafíos y estamos aquí para ayudarte a superarlos.
+                        ¿Sientes que tú o tus hijos podrían ser más fuertes, tanto física como mentalmente? En el <span className="text-karate-dark font-medium">Dojo Karate Moreno (Itosu Kai)</span> en la <span className="text-karate-dark font-medium">Quinta Región</span> entendemos estos desafíos y estamos aquí para ayudarte a superarlos mediante el verdadero Karate Tradicional de Viña del Mar.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-8">
                         <a href="#info" className="btn-primary flex items-center gap-2 shadow-xl shadow-karate-red/10" aria-label="Ir a la información para tu primera clase gratis">

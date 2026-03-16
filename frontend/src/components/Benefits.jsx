@@ -3,29 +3,29 @@ import { motion } from 'framer-motion';
 
 const benefits = [
     {
-        icon: <Focus className="h-8 w-8 text-karate-red" />,
+        icon: <Focus className="h-8 w-8 text-karate-red" aria-label="Icono de Disciplina en el Karate" />,
         title: "Disciplina",
-        description: "Mejora real en la concentración y el respeto a través de la práctica constante."
+        description: "Mejora real en la concentración y el respeto a través de la práctica constante del Karate tradicional."
     },
     {
-        icon: <Zap className="h-8 w-8 text-karate-gold" />,
+        icon: <Zap className="h-8 w-8 text-karate-gold" aria-label="Icono de Fuerza Integral en Artes Marciales" />,
         title: "Fuerza Integral",
         description: "Aumento progresivo de la fuerza física y mental para enfrentar desafíos."
     },
     {
-        icon: <ShieldCheck className="h-8 w-8 text-blue-500" />,
+        icon: <ShieldCheck className="h-8 w-8 text-blue-500" aria-label="Icono de Defensa Personal en Viña del Mar" />,
         title: "Defensa Personal",
-        description: "Habilidades prácticas de protección para todas las edades."
+        description: "Habilidades prácticas de protección y defensa personal para todas las edades."
     },
     {
-        icon: <Users className="h-8 w-8 text-karate-red" />,
+        icon: <Users className="h-8 w-8 text-karate-red" aria-label="Icono de Comunidad Dojo Moreno" />,
         title: "Comunidad",
-        description: "Un grupo de apoyo cercano, integrador y basado en el respeto mutuo."
+        description: "Un grupo de apoyo cercano, integrador y basado en el respeto mutuo en nuestro Dojo."
     },
     {
-        icon: <Award className="h-8 w-8 text-karate-gold" />,
+        icon: <Award className="h-8 w-8 text-karate-gold" aria-label="Icono de Red de Dojos Itosu Kai Chile" />,
         title: "Red de Dojos",
-        description: "Variedad de horarios y disponibilidad en nuestras sedes de Viña y Santiago."
+        description: "Variedad de horarios y disponibilidad en nuestras sedes de Viña del Mar y Santiago (Itosu Kai Chile)."
     }
 ];
 
